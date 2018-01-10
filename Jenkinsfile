@@ -18,9 +18,9 @@ node {
 				}
 			}
 			stage('Docker'){
-				sh 'docker build -t jboss_application .'
-				sh 'chmod 777 ./clean_up.sh'
+			    sh 'chmod 777 ./clean_up.sh'
 				sh './clean_up.sh'
+				sh 'docker build -t jboss_application .'
 				sh 'docker run -id -p 9991:9990 -p 8022:8080 --name jboss_container jboss_application'
 			}
 		}
