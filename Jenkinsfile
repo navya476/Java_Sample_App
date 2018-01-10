@@ -1,3 +1,4 @@
+def rtMaven = Artifactory.newMavenBuild()
 node {
 		try {
 			cleanWs()
@@ -13,17 +14,19 @@ node {
 				// Maven build starts here //
 				def mvn_version = tool 'maven'
 				withEnv( ["PATH+MAVEN=${mvn_version}/bin"]  ) {
-					buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean install -Dmaven.test.skip=true' 
+					buildInfo = rtMaven.run pom: 'SpringMVCSecurityXML/pom.xml', goals: 'clean install -Dmaven.test.skip=true' 
 				}
 			}
 			stage('Docker'){
 				sh 'docker build -t jboss_application .'
-				sh 'docker run -it -p 9990:8080 jboss_application'
+				sh 'docker rm -f jboss_container'
+				sh 'docker run -id -p 9991:9990 -p 8022:8080 -name jboss_container jboss_application'
 			}
 		}
 		catch(Exception e)
 		{
 			println "In catch block"
 			println e
+			sh 'exit 1'
 		}
 	}
