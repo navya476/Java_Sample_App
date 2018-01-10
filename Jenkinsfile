@@ -18,7 +18,7 @@ node {
 			}
 			stage('Docker'){
 				sh 'docker build -t jboss_application .'
-				sh 'docker run -it jboss_application'
+				sh 'docker run -it -p 9990:8080 jboss_application'
 			}
 		}
 		catch(Exception e)
