@@ -153,7 +153,7 @@
                 </configuration>
                   --> 
             </plugin>
-     <!--     <plugin>
+         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>versions-maven-plugin</artifactId>
             <version>2.1</version> 
@@ -164,10 +164,10 @@
             <configuration>
                 <tag>${project.artifactId}-${project.version}</tag>
             </configuration>
-        </plugin> -->
+        </plugin> 
         </plugins>
     </build>        
- <!--   <scm>
+    <scm>
 	    <developerConnection>scm:git:https://github.com/boga5/Java_sample_app.git</developerConnection>
     </scm> 
   
@@ -176,5 +176,5 @@
         <id>Ram_Generic_local</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_local</url>
       </repository>
-    </distributionManagement> -->
+    </distributionManagement> 
 </project>
