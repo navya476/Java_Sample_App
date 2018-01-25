@@ -165,6 +165,13 @@
                 <tag>${project.artifactId}-$BUILD_NUMBER-${project.version}</tag>
             </configuration>  
         </plugin> 
+		<plugin>
+    <artifactId>maven-deploy-plugin</artifactId>
+    <version>2.5</version>
+    <configuration>
+        <updateReleaseInfo>true</updateReleaseInfo>
+    </configuration>
+</plugin>
 	<!--	<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
