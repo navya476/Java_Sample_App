@@ -176,7 +176,7 @@
         </plugins>
     </build>        
   <scm>
-	    <developerConnection>scm:git:git@github.com:{boga5}/{Java_sample_app}.git</developerConnection>
+	    <developerConnection>scm:git:git@github.com:boga5/Java_sample_app.git</developerConnection>
     </scm> 
   
    <!-- <distributionManagement>
