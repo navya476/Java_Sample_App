@@ -189,7 +189,7 @@
     <distributionManagement>
       <repository>
         <id>Ram_Generic_local</id>
-        <url>https://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_local</url>
+        <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_local</url>
       </repository>
     </distributionManagement> 
 </project>
