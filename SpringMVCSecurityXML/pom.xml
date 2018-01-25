@@ -192,10 +192,10 @@
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_local</url>
       </repository> 
 	    </distributionManagement>
-	    <distributionManagement>
+	<!--    <distributionManagement>
 	<repository>
         <id>Ram_Generic_release</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_release</url>
       </repository>
-    </distributionManagement> 
+    </distributionManagement> -->
 </project>
