@@ -179,10 +179,10 @@
 	    <developerConnection>scm:git:git@github.com:boga5/Java_sample_app.git</developerConnection>
     </scm> 
   
-   <!-- <distributionManagement>
+    <distributionManagement>
       <repository>
         <id>Ram_Generic_local</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/Ram_Generic_local</url>
       </repository>
-    </distributionManagement> -->
+    </distributionManagement> 
 </project>
