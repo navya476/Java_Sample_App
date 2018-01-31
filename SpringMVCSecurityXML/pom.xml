@@ -186,13 +186,13 @@
 	    <developerConnection>scm:git:git@github.com:boga5/Java_sample_app.git</developerConnection>
     </scm> 
   
-    <distributionManagement>
+  <!--  <distributionManagement>
        <repository>
         <id>fortna_snapshot</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/fortna_snapshot</url>
       </repository> 
 	    </distributionManagement> 
-	<!--    <distributionManagement>
+	    <distributionManagement>
 	<repository>
         <id>fortna_release</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/fortna_release</url>
