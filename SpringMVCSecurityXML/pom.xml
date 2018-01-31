@@ -188,13 +188,13 @@
   
     <distributionManagement>
        <repository>
-        <id>Ram_Generic_local</id>
+        <id>fortna_snapshot</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/fortna_snapshot</url>
       </repository> 
 	    </distributionManagement>
 	<!--    <distributionManagement>
 	<repository>
-        <id>Ram_Generic_release</id>
+        <id>fortna_release</id>
         <url>http://54.250.182.205:8081/artifactory/webapp/#/artifacts/browse/tree/General/fortna_release</url>
       </repository>
     </distributionManagement> -->
