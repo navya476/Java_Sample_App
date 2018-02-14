@@ -6,6 +6,6 @@ getMavenBuildArtifactName() {
 }
 
 #artifact_name = 
-getMavenBuildArtifactName()
+getMavenBuildArtifactName
 
 #echo "$artifact_name"
