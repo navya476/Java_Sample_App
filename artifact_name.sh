@@ -1,10 +1,11 @@
 #!/bin/bash
 
-def getMavenBuildArtifactName() {
- pom = readMavenPom file: 'pom.xml'
- return "${pom.artifactId}-${pom.version}.${pom.packaging}"
+getMavenBuildArtifactName() {
+ pom = readMavenPom file: 'SpringMVCSecurityXML/pom.xml'
+ echo "${pom.artifactId}-${pom.version}.${pom.packaging}"
 }
 
-artifact_name = getMavenBuildArtifactName()
+#artifact_name = 
+getMavenBuildArtifactName()
 
-echo "$artifact_name"
+#echo "$artifact_name"
