@@ -3,6 +3,9 @@
 getMavenBuildArtifactName() {
  pom = readMavenPom file: 'SpringMVCSecurityXML/pom.xml'
  echo "${pom.artifactId}-${pom.version}.${pom.packaging}"
+ echo "${pom.artifactId}-${pom.version}.${pom.packaging}"
+ echo "${pom.artifactId}-${pom.version}.${pom.packaging}"
+ echo "${pom.artifactId}-${pom.version}.${pom.packaging}"
 }
 
 #artifact_name = 
